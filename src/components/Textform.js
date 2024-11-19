@@ -7,27 +7,27 @@ export default function Textform(props) {
     console.log("Uppercase was Clicked" + text);
     let newText = text.toUpperCase();
     setText(newText);
-    props.showAlert("Converted to upper case","Success");
+    props.showAlert("Converted to upper case","success");
   }
 
   const handleLoClick = ()=>{
     console.log("Lowercase was Clicked" + text);
     let newText = text.toLowerCase();
     setText(newText);
-    props.showAlert("Converted to lower case","Success");
+    props.showAlert("Converted to lower case","success");
   }
   const handleCapitalizeClick = ()=>{
     console.log("capital first letter" + text);
     let newText = (text.charAt(0).toUpperCase() + text.slice(1));
     setText(newText);
-    props.showAlert("Capitalize first letter","Success");
+    props.showAlert("Capitalize first letter","success");
   }
 
   const handleReverseClick = ()=>{
     console.log("Reverse the text" + text);
     let newText = (text.split('').reverse().join(''));
     setText(newText);
-    props.showAlert("Reverse the text","Success");
+    props.showAlert("Reverse the text","success");
   }
 
   const handleCopyClick = ()=>{
@@ -35,13 +35,13 @@ export default function Textform(props) {
     var text = document.getElementById("mybox");
     text.select();
     navigator.clipboard.writeText(text.value);
-    props.showAlert("Copied to clipboard","Success");
+    props.showAlert("Copied to clipboard","success");
   }
 
   const handleWhiteSpace = () =>{
     console.log("remove whitespace");
     setText(text.trim().replace(/\s+/g, ' '));
-    props.showAlert("Remove whitespace","Success");
+    props.showAlert("Remove whitespace","success");
   }
     
 
