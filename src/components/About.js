@@ -29,7 +29,7 @@ let myStyle = {
               aria-expanded="true"
               aria-controls="collapseOne"
             >
-              Analyze Your text
+              Analyze Your text tool
             </button>
           </h2>
           <div
